@@ -7,11 +7,17 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import jsonp from 'jsonp'
 export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  mounted () {
+      // let url = 'https://new-api.meiqia.com/visit/get_base_config';
+        // jsonp(url, () => {
+
+        // })
   }
 }
 </script>
