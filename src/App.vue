@@ -20,7 +20,7 @@ export default {
         HelloWorld
     },
     mounted() {
-        let url = 'https://www.imooc.com/search/hotwords';
+        let url = '/api/static-files/40z3oz40z4lz17z4bz3mz48z4az42z3mz40z51z4l.js?v=1&ent_id=7772&jsonp_cb=blacklistJsonp';
         jsonp(url, (err,src) => {
             this.datalist = src
         })
