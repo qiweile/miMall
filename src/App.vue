@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-import jsonp from 'jsonp'
+// import jsonp from 'jsonp'
 export default {
     name: 'app',
     data() {
@@ -13,10 +13,10 @@ export default {
         }
     },
     mounted() {
-        let url = '/api'
-        jsonp(url,() => {
+        // let url = '/api'
+        // jsonp(url,() => {
 
-        })
+        // })
     }
 }
 </script>
