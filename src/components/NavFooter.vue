@@ -1,5 +1,5 @@
 <template>
-    <div>footer</div>
+    <div>nav-footer</div>
 </template>
 <script>
     export default {
