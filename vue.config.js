@@ -9,7 +9,7 @@ module.exports = { //导入模块
         // 代理
         proxy: {
             '/api': {
-                // 目标服务器
+                // 目标服务器 如果修改环境就在这修改 如：target: 'https://test-www.imooc.com',
                 target: 'https://www.imooc.com',
                 // 通过设置changeOrigin: true 开启代理
                 changeOrigin: true,

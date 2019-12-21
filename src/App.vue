@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-// import jsonp from 'jsonp'
+import strage from "./storage";
 export default {
     name: 'app',
     data() {
@@ -13,10 +13,8 @@ export default {
         }
     },
     mounted() {
-        // let url = '/api'
-        // jsonp(url,() => {
-
-        // })
+        // strage.setItem('aa',1423,'b')
+        strage.clear('aa','b')
     }
 }
 </script>
