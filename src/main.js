@@ -4,6 +4,10 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App.vue'
 // import env from './env'
+const mock = true
+if(mock) {
+    require('./mock/api')
+}
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 // Add a request interceptor
@@ -12,7 +16,7 @@ axios.interceptors.request.use(function (config) {
     return config;
 });
 // 设置请求接口
-// axios.defaults.baseURL = '/api'
+axios.defaults.baseURL = '/api'
 // axios.defaults.baseURL = env.baseURL
 // 设置超时时间
 axios.defaults.timeout = 8000;
