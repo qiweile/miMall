@@ -1,20 +1,24 @@
 <template>
     <div id="app">
+        {{data}}
         <router-view></router-view>
     </div>
 </template>
 <script>
-import strage from "./storage";
+// import strage from "./storage";
 export default {
     name: 'app',
     data() {
         return {
+            data: {
 
+            }
         }
     },
     mounted() {
-        // strage.setItem('aa',1423,'b')
-        strage.clear('aa','b')
+        this.axios.get('/mock/user/login.json').then(res => {
+            this.data = res
+        })
     }
 }
 </script>
